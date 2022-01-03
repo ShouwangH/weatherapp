@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>Title</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Today's Weather</a>
+            <form class="d-flex zipsearch">
+              <input class="form-control me-2" id="zip" type="zip" placeholder="Zipcode" aria-label="zip">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div>or</div>
+            <form class="d-flex citystatesearch">
+                <input class="form-control me-2" id="city" type="city" placeholder="City" aria-label="City">
+                <input class="form-control me-2" id="state" type="state" placeholder="State" aria-label="State">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+    <ul class="list-group list-group">
+        <li class="list-group-item list-group-item-danger d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">High</div>
+            <h5 id="high"></h5>
+          </div>
+        </li>
+        <li class="list-group-item list-group-item-primary d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Low</div>
+            <h5 id="low"></h5>
+          </div>
+        </li>
+        <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Forecast</div>
+            <h5 id="forecast"></h5>
+          </div>
+        </li>
+        <li class="list-group-item list-group-item-info d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Humidity</div>
+              <h5 id="humidity"></h5>
+            </div>
+          </li>
+      </ul>
+
+
+
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
